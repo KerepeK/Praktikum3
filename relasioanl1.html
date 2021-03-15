@@ -1,0 +1,29 @@
+<html>
+    <!-- ini kepala dan judulnya -->
+    <head>
+        <title>contoh program Javascript</title>
+    </head>
+    <script languages="Javascript">
+        function test() {
+            // ini unutk memunculkan windowa atau popup nilai 1 dan 2
+            val1=window.prompt("nilai I :")
+            val2=window.prompt("nilai II :")
+            // ini untuk mengecek persamaan variabel
+            document.write("<br>"+"val1 == val2"+"<br>") //menampilkan text
+            document.write(val1==val2) //eksekusi variabel
+            // ini untuk mengecek pertidaksamaan variabel
+            document.write("<br>"+"val1 != val2"+"<br>")//menampilkan text
+            document.write(val1!=val2)//eksekusi variabel
+            // ini untuk mengecek pertidaksamaan lebih besar dari
+            document.write("<br>"+"val1 &gt val2"+"<br>")//menampilkan text
+            document.write(val1>val2)//eksekusi variabel
+            // ini untuk mengecek pertidaksamaan lebih kecil dari
+            document.write("<br>"+"val1 &lt val2"+"<br>")//menampilkan text
+            document.write(val1<val2)//eksekusi variabel
+        }
+    </script>
+    <body>
+        <!-- memunculkan button untun memanggil function test -->
+        <input type="button" name="button1" value="relational" onclick="test()">
+    </body>
+</html>

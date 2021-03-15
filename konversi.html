@@ -1,0 +1,48 @@
+<html>
+    <!-- pala dan judul -->
+    <head>
+        <title>Konversi</title>
+    </head>
+    <script language="javascript">
+        function kon() {
+		// penggunaan if untuk menentukan konversi
+        var angka=document.ubah.inputangka.value
+		if (angka>100) 
+			alert("0-100!!!!!!")//memunculkan alert
+        // angka 81 dan seterusnya akan memunculkan huruf A
+		else if(angka>=81)
+			document.ubah.hasil.value="A" 
+        // angka 71 dan seterusnya akan memunculkan huruf AB
+		else if(angka>=71) 
+			document.ubah.hasil.value="AB" 
+        // angka 66 dan seterusnya akan memunculkan huruf B
+		else if(angka>=66) 
+			document.ubah.hasil.value="B" 
+        // angka 61 dan seterusnya akan memunculkan huruf BC
+		else if(angka>=61) 
+			document.ubah.hasil.value="BC" 
+        // angka 56 dan seterusnya akan memunculkan huruf C
+		else if(angka>=56) 
+			document.ubah.hasil.value="C" 
+        // angka 41 dan seterusnya akan memunculkan huruf D
+		else if(angka>=41) 
+			document.ubah.hasil.value="D" 
+        // angka 0 dan seterusnya akan memunculkan huruf E
+		else if(angka>=0) 
+			document.ubah.hasil.value="E" 
+		else
+			alert("0-100!!!!!!!")//memunculkan alert
+	}
+    </script>
+    <body>
+        
+        <form method="post" name="ubah">
+            <!-- text box menampung angka yang akan dimasukkan -->
+            <p>ANGKA<input type="text" name="inputangka" size="20"></p>
+            <!-- text box hasil konversi -->
+            <p>HURUF<input type="text" name="hasil" size="20"></p>
+            <!-- button untuk mengkonversikan -->
+            <p><input type="button" name="btnKonversi" value="KONVERSI" onclick=kon()></p>
+        </form>
+    </body>
+</html>

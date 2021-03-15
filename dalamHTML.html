@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Writing into an HTML Elemnt with Javascript</title>
+    </head>
+    <body>
+        <!-- wadah paragrap yang akan dipanggil -->
+        <p id="greet"></p>
+        <p id="result"></p>
+
+        <!-- javascrip -->
+        <script>
+        //isi dari wadah greet
+        document.getElementById("greet").innerHTML="Hello Gatot";
+        
+        //isi dari wadah result
+        var x=50;
+        var y=30;
+        var sum=x+y; // hasil.
+        document.getElementById("result").innerHTML=sum;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <!-- pala dan judul -->
+    <head>
+        <title>Form Input</title>
+    </head>
+    <!-- javascript -->
+    <script language="javascript">
+        function test() {
+            var val1=document.kirim.T1.value //menampung variabel
+            //penggunaan loop if dan perhitungan menggunakan modulus
+            if (val1%2==0) { 
+                //isi dari T2
+                document.kirim.T2.value="bilangan genap"
+            } 
+            else {
+                //isi dari T2
+                document.kirim.T2.value="bilangan ganjil"
+            }
+        }
+    </script>
+    <body>
+        <!-- pembuatan form -->
+        <form method="POST" name="kirim">
+            <p>
+                <!-- membuat textbox, memanggil T1 -->
+                BIL <input type="text" name="T1" size="20">
+                merupakan BIL
+                <!-- membuat textbox, memanggil T2 -->
+                <input type="text" name="T2" size="20">
+            </p>
+            <!-- tombol input -->
+            <p><input type="button" value="TEBAK" name="B1"
+            onclick=test()>
+            </p>
+        </form>
+    </body>
+</html>

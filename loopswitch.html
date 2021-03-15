@@ -1,0 +1,37 @@
+<html>
+    <!-- pala dan judul -->
+    <head>
+        <title>Contoh Program Javascript</title>
+    </head>
+    <!-- javascript -->
+    <script language="Javascript">
+        function test(){
+            val1=window.prompt("input nilai (1-5):") //menampilkan window
+            // looping menggunakan switch
+            switch (val1) {
+                case "1":
+                    document.write("bilangan satu")
+                    break
+                case "2":
+                    document.write("bilangan dua")
+                    break
+                case "3":
+                    document.write("bilangan tiga")
+                    break
+                case "4":
+                    document.write("bilangan empat")
+                    break
+                case "5":
+                    document.write("bilangan lima")
+                    break
+                default:
+                    document.write("bilangan lainnya")
+            }
+        }
+    </script>
+    <body>
+        <!-- memunuclkan button dan memanggil function test -->
+        <input type="button" name="button1" value="switch"
+        onclick=test()>
+    </body>
+</html>

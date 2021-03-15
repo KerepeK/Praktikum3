@@ -1,0 +1,36 @@
+<html>
+    <!-- pala dan judul -->
+    <head>
+        <title>Objek document</title>
+    </head>
+    <body>
+        <!-- javacript -->
+        <script language="javascript">
+            // variabel untuk mengisi warna pada BG
+            function ubahWarnaLB(warna) {
+                document.bgColor=warna;
+            }    
+            //variabel untuk mengisi warna pada teks
+            function ubahWarnaLD(warna) {
+                document.fgColor=warna;
+            }
+        </script>
+        <h1>TES</h1> 
+        <form>
+            <!-- button mengubah warna BG ke hijau -->
+            <input type="button"
+            value="latar belakang hijau"
+            onclick="ubahWarnaLB('GREEN')">
+            <!-- button mengubah warna BG ke putih -->
+            <input type="button"
+            value="Latar belakang putih"
+            onclick="ubahWarnaLB('WHITE')">
+            <!-- button mengubah warna teks ke kuning -->
+            <input type="button"
+            value="teks kuning"
+            onclick="ubahWarnaLD('YELLOW')">
+            <!-- button mengubah warna teks ke biru -->
+            <input type="button"
+            value="teks biru"
+            onclick="ubahWarnaLD('BLUE')">
+        </form></body></html>

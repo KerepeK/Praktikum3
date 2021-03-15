@@ -1,0 +1,48 @@
+<html>
+    <!-- pala dan judul -->
+    <head>
+        <title>Kalkulator Sederhana</title>
+    </head>
+    <script language="javascript">
+        // bagian penjumlahan
+        function tambah() {
+		    var angka1=parseFloat(document.hitung.bil1.value)
+		    var angka2=parseFloat(document.hitung.bil2.value)
+            document.hitung.hasil.value=angka1+angka2
+        }
+        // bagian pengurangan
+        function kurang() {
+            var angka1=parseFloat(document.hitung.bil1.value)
+		    var angka2=parseFloat(document.hitung.bil2.value)
+            document.hitung.hasil.value=angka1-angka2
+        }
+        // bagian perkalian
+        function kali() {
+		    var angka1=parseFloat(document.hitung.bil1.value)
+		    var angka2=parseFloat(document.hitung.bil2.value)
+            document.hitung.hasil.value=angka1*angka2
+        }
+        // bagian pembagian
+        function bagi() {   
+		    var angka1=parseFloat(document.hitung.bil1.value)
+		    var angka2=parseFloat(document.hitung.bil2.value)
+            document.hitung.hasil.value=angka1/angka2
+	    }
+        </script>
+    <body>
+        <form method="post" name="hitung">
+            <!-- textbox1 -->
+            <p>Bil 1<input type="text" name="bil1" size="5"></p>
+            <!-- textbox2 -->
+            <p>Bil 2<input type="text" name="bil2" size="5"></p>
+            <!-- tombol operasi hitung -->
+            <p><input type="button" name="btnTambah" value="+" onclick=tambah() style="float:left; margin-left:1%"></p>
+            <p><input type="button" name="btnKurang" value="-" onclick=kurang() style="float:left; margin-left:1%"></p> 
+            <p><input type="button" name="btnKali" value="x" onclick=kali() style="float:left; margin-left:1%"></p> 
+            <p><input type="button" name="btnBagi" value="/" onclick=bagi() style="float:left; margin-left:1%"></p> 
+            <br>
+            <!-- textbox hasil -->
+            <p>HASIL<input type="text" name="hasil" size="20"></p> 
+        
+    </body>
+</html>
